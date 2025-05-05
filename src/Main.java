@@ -39,6 +39,7 @@ public class Main {
         var total2 = totalEmployees *8;
         System.out.println ("Если в компании работает "+ totalEmployees + " человек, то всего " + total2 + " часов работы может быть поделено между сотрудниками». ");
 
+
     }
 
 }
