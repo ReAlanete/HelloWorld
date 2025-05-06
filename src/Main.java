@@ -40,7 +40,7 @@ public class Main {
         int teacher2 = 27;
         int teacher3 = 30;
         int totalPages = 480;
-        int pagesPerStudent = totalPages/(teacher1+teacher1+teacher3);
+        int pagesPerStudent = totalPages/(teacher1+teacher2+teacher3);
         System.out.println("На каждого ученика рассчитано "+ pagesPerStudent +" листов бумаги.");
         // Задача 4
         int bottlesInTwoMine = 16;
@@ -81,7 +81,7 @@ public class Main {
         int weightEgg = 70;
         int totalWeightEgg = egg * weightEgg;
         int totalFood = (weightBananas + weightMilk + totalWeightEgg + weightIce);
-        float totalFoodKg = totalFood / 1000F;
+        float totalFoodKg = (float) (totalFood / 1000);
         System.out.println("Общий вес спортзавтрака составит " + totalFood + " грамм или " + totalFoodKg + " киллограм." );
         // Задача 7
         int weightNeedToLose = 7;
