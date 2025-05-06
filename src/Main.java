@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         // Задача 1
-        byte x = 127;
-        short i = 128;
-        int y = 32768;
-        long a = 2147483648L;
-        float b = (float) 1.4;
-        double c = 0.77777777;
+        @SuppressWarnings("unused")  byte x = 127;
+        @SuppressWarnings("unused") short i = 128;
+        @SuppressWarnings("unused") int y = 32768;
+        @SuppressWarnings("unused") long a = 2147483648L;
+        @SuppressWarnings("unused") float b = (float) 1.4;
+        @SuppressWarnings("unused") double c = 0.77777777;
         System.out.println("Значение переменной х " + "с типом " + "byte " + "ровно " + x);
         System.out.println("Значение переменной i " + "с типом " + "short " + "ровно " + i);
         System.out.println("Значение переменной y " + "с типом " + "int " + "ровно " + y);
@@ -14,12 +14,12 @@ public class Main {
         System.out.println("Значение переменной b " + "с типом " + "float " + "ровно " + b);
         System.out.println("Значение переменной c " + "с типом " + "double " + "ровно " + c);
         // перечтиал задание и решил только объявить переменные и не давать им значения как указано в задаче
-        byte х1;
-        short i1;
-        int y1;
-        long a1;
-        float b1;
-        double c1;
+        @SuppressWarnings("unused") byte х1;
+        @SuppressWarnings("unused") short i1;
+        @SuppressWarnings("unused") int y1;
+        @SuppressWarnings("unused") long a1;
+        @SuppressWarnings("unused")  float b1;
+        @SuppressWarnings("unused") double c1;
         System.out.println("Значение переменной х1 " + "с типом " + "byte " + "ровно от -128 до 127");
         System.out.println("Значение переменной i1 " + "с типом " + "short " + "ровно от -32 768 до 32 767");
         System.out.println("Значение переменной y1 " + "с типом " + "int " + "ровно от -2 147 483 648 до 2 147 483 647");
@@ -28,13 +28,13 @@ public class Main {
         System.out.println("Значение переменной c1 " + "с типом " + "double " + "ровно от -1.7Е+308 до 1.7Е+308");
         // Если я правильно понял, то второй варинат выполнения задачи правильный (наверное)
         // Задача 2
-        float x2 = 27.12f;
-        long i2 = 987678965549L;
-        float y2 = 2.786f;
-        short a2 = 569;
-        short b2 = -159;
-        short c2 = 27897;
-        byte d = 67;
+        @SuppressWarnings("unused") float x2 = 27.12f;
+        @SuppressWarnings("unused") long i2 = 987678965549L;
+        @SuppressWarnings("unused") float y2 = 2.786f;
+        @SuppressWarnings("unused") short a2 = 569;
+        @SuppressWarnings("unused") short b2 = -159;
+        @SuppressWarnings("unused") short c2 = 27897;
+        @SuppressWarnings("unused") byte d = 67;
         // Задача 3
         int teacher1 = 23;
         int teacher2 = 27;
