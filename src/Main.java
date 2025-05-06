@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // Задача 1
+        System.out.println("Задание 1");
         @SuppressWarnings("unused")  byte x = 127;
         @SuppressWarnings("unused") short i = 128;
         @SuppressWarnings("unused") int y = 32768;
@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Значение переменной b1 " + "с типом " + "float " + "ровно от -3.4Е+38 до 3.4Е+38");
         System.out.println("Значение переменной c1 " + "с типом " + "double " + "ровно от -1.7Е+308 до 1.7Е+308");
         // Если я правильно понял, то второй варинат выполнения задачи правильный (наверное)
-        // Задача 2
+        System.out.println("Задание 2");
         @SuppressWarnings("unused") float x2 = 27.12f;
         @SuppressWarnings("unused") long i2 = 987678965549L;
         @SuppressWarnings("unused") float y2 = 2.786f;
@@ -35,14 +35,14 @@ public class Main {
         @SuppressWarnings("unused") short b2 = -159;
         @SuppressWarnings("unused") short c2 = 27897;
         @SuppressWarnings("unused") byte d = 67;
-        // Задача 3
+        System.out.println("Задание 3");
         int teacher1 = 23;
         int teacher2 = 27;
         int teacher3 = 30;
         int totalPages = 480;
         int pagesPerStudent = totalPages/(teacher1+teacher2+teacher3);
         System.out.println("На каждого ученика рассчитано "+ pagesPerStudent +" листов бумаги.");
-        // Задача 4
+        System.out.println("Задание 4");
         int bottlesInTwoMine = 16;
         int timeInMin = 2;
         int bottlesPerMin = bottlesInTwoMine / timeInMin;
@@ -58,7 +58,7 @@ public class Main {
         int timeOneMonth = timeDayMin * 30;
         int totalBottlesOneMonth = timeOneMonth * bottlesPerMin;
         System.out.println("За 1 месяц машина произвела " + totalBottlesOneMonth + " штук бутылок."); // Если брать 30 дней в месяце, а не 28 или 31
-        // Задача 5
+        System.out.println("Задание 5");
         int totalCan = 120;
         int whiteCanPerClass = 2;
         int brownCanPerClass = 4;
@@ -67,7 +67,7 @@ public class Main {
         int totalBrownCan = totalClasses * brownCanPerClass; //всего коричневых банок краски куплено
         int totalWhiteCan = totalClasses * whiteCanPerClass; // всего белых банок краски куплено
         System.out.println("В школе, где " +totalClasses + " классов, нужно " + totalWhiteCan + " банок белой краски и " + totalBrownCan + " банок коричневой краски.");
-        // Задача 6
+        System.out.println("Задание 6");
         int banana = 5;
         int weightBanana = 80;
         int weightBananas = banana * weightBanana;
@@ -81,17 +81,17 @@ public class Main {
         int weightEgg = 70;
         int totalWeightEgg = egg * weightEgg;
         int totalFood = (weightBananas + weightMilk + totalWeightEgg + weightIce);
-        float totalFoodKg = (float) (totalFood / 1000);
+        float totalFoodKg = totalFood / 1000F;
         System.out.println("Общий вес спортзавтрака составит " + totalFood + " грамм или " + totalFoodKg + " киллограм." );
-        // Задача 7
+        System.out.println("Задание 7");
         int weightNeedToLose = 7;
         float weightLose1 = 0.25F;
         float weightLose2 = 0.5F;
         int daysToLoseWeight1 = (int) (weightNeedToLose / weightLose1);
         int daysToLoseWeight2 = (int) (weightNeedToLose / weightLose2);
-        System.out.println("Если спортсмен будет терять по " + weightLose1 + " кг в день, то потребуется " + daysToLoseWeight1 +" дней." +
-                " А если по " +weightLose2 + " кг в день ,то потребуется " + daysToLoseWeight2 + " дней.");
-        //Задача 8
+        int averageDay =(daysToLoseWeight1+daysToLoseWeight2)/2;
+        System.out.println(averageDay + " день в среднем уйдет на похудение.");
+        System.out.println("Задание 8");
         int employeeSalary1 = 67760;
         int employeeSalary2 = 83690;
         int employeeSalary3 = 76230;
