@@ -73,7 +73,7 @@ public class Main {
         int weightBananas = banana * weightBanana;
         int volumeMilk = 200;
         int weightPerVolume100 = 105;
-        int weightMilk = weightPerVolume100 * volumeMilk / 100; // делим на 100 , так как вес указан на 100 грамм, а у нас 200 грамм
+        int weightMilk = weightPerVolume100 * volumeMilk / 100; // делим на 100, так как вес указан на 100 грамм, а у нас 200 грамм
         int ice = 2;
         int weightOneIce = 100;
         int weightIce = ice * weightOneIce;
