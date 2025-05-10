@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1 и 2");
         int clientOS = 1;
-        int clientDeviceYear = 2014;
+        int clientDeviceYear = 2015;
         if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке.");
         } else if (clientOS == 1 && clientDeviceYear < 2015) {
@@ -17,7 +17,7 @@ public class Main {
         }
 
         System.out.println("Задача 3");
-        int year = 1904;
+        int year = 2021;
 
         if (year > 1584 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
             System.out.println(year + " год является високосным.");
@@ -39,7 +39,7 @@ public class Main {
             System.out.println("Доставки нет.");
         }
         System.out.println("Задача 5");
-        int monthNumber = 8;
+        int monthNumber = 12;
         switch (monthNumber) {
             case 12:
             case 1:
