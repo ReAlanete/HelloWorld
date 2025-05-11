@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         //Task 1
         System.out.println("Task 1");
         for (int i = 1; i <= 10; i++) {
@@ -51,11 +52,13 @@ public class Main {
             total1 = total1 + total1 / 100;
             total1 = total1 + salary1;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total1 + " рублей.");
+
         }
         // Task 10
         System.out.println("Task 10");
         for (int i = 1; i <= 10; i++) {
             System.out.println("2*" + i + "=" + (2 * i));
         }
+
     }
 }
