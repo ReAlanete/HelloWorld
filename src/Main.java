@@ -50,20 +50,35 @@ public class Main {
             year1++;
             System.out.println("Год " + year1 + " численность населения составляет " + populationCountryY1 + ".");
         }
-        // Task 4/5
-        System.out.println("Task 4/5");
+        // Task 4
+        System.out.println("Task 4");
+        int salary5 = 15_000;
+        int total5 = 0;
+        float salary6 = salary5 * 0.07F;
+        int month5 = 1;
+        System.out.println("Месяц " + month5 + ", сумма накоплений равна " + total5 + " рублей.");
+        while (total5 < 12_000_000) {
+            month5++;
+            total5 = (int) (total5 + salary6);
+            total5 = (total5 + salary5);
+            System.out.println("Месяц " + month5 + ", сумма накоплений равна " + total5 + " рублей.");
+        }
+        // Task 5
+        System.out.println("Task 5");
         int salary1 = 15_000;
         int total1 = 0;
         float salary2 = salary1 * 0.07F;
         int month1 = 1;
-        System.out.println("Месяц " + month1 + ", сумма накоплений равна " + salary1 + " рублей.");
-
+        System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей.");
         while (total1 < 12_000_000) {
             month1++;
             total1 = total1 + salary1;
-            total1 = (int) (total1 + (salary2));
-            System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей.");
+            total1 = (int) (total1 + salary2);
+            if (month1 % 6 == 0) {
+                System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей.");
+            }
         }
+
         // Task 6
         System.out.println("Task 6");
         int salary3 = 15_000;
