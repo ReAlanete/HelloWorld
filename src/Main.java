@@ -7,22 +7,21 @@ public class Main {
         int total = 0;
         int month = 0;
         while (total < 2_459_000) {
-
             month++;
             total = total + salary;
-            total = total + total / 100;
-                        System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей.");
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей.");
         }
         // Task 2
         System.out.println("Task 2");
-        int i = 1;
-        for (; i <= 10; i++) {
+        int i = 0;
+        while (i < 10) {
+            i++;
             System.out.print(i + " ");
         }
         System.out.println();
-        i = 11;
-        while (i > 1) {
-            i--;
+        i = 10;
+        for (; i >= 1; i--) {
+
             System.out.print(i + " ");
         }
         // Task 3 Решение через while
@@ -63,9 +62,7 @@ public class Main {
             month1++;
             total1 = total1 + salary1;
             total1 = (int) (total1 + (salary2));
-
-            if (month1 % 6 == 0)
-                System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей.");
+            System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей.");
         }
         // Task 6
         System.out.println("Task 6");
