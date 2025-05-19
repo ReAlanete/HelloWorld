@@ -1,118 +1,70 @@
+import java.util.Arrays; // почему это появилось когда я ввел Arrays.toString и что это значит?
+
 public class Main {
     public static void main(String[] args) {
-
-        // Task 1
-        System.out.println("Task 1");
-        int salary = 15_000;
-        int total = 0;
-        int month = 0;
-        while (total < 2_459_000) {
-            month++;
-            total = total + salary;
-            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей.");
+        //task 1
+        // 1 массив
+        int[] arr = new int[3];
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        // 2 массив
+        float[] arr2 = {1.57f, 7.654f, 9.986f};
+        // 3 массив
+        int[] arr3 = {99, 69, 39};
+        //task 2
+        System.out.println("Задача 2");
+        // вывел значение 1 массива
+        System.out.print(arr[0]);
+        for (int i = 1; i < arr.length; i++) {
+            System.out.print(", " + arr[i]);
         }
-        // Task 2
-        System.out.println("Task 2");
-        int i = 0;
-        while (i < 10) {
-            i++;
-            System.out.print(i + " ");
+        // вывел значение 2 массива
+        System.out.println();
+        System.out.print(arr2[0]);
+        for (int i = 1; i < arr2.length; i++) {
+            System.out.print(", " + arr2[i]);
+        }
+        // вывел значение 3 массива
+        System.out.println();
+        System.out.print(arr3[0]);
+        for (int i = 1; i < arr3.length; i++) {
+            System.out.print(", " + arr3[i]);
         }
         System.out.println();
-        i = 10;
-        for (; i >= 1; i--) {
-
-            System.out.print(i + " ");
+        //task 3
+        System.out.println("Задача 3");
+        // вывел значение 1 массива в обратном порядке
+        System.out.print(arr[arr.length - 1]);
+        for (int i = arr.length - 2; i >= 0; i--) {
+            System.out.print(", " + arr[i]);
         }
-        // Task 3 Решение через while
-        System.out.println(" ");
-        System.out.println("Task 3");
-        int populationCountryY = 12_000_000;
-        int fertilityPerThousand = 17;
-        int mortalityPerThousand = 8;
-        int year = 2000;
-        System.out.println("Год " + year + " численность населения составляет " + populationCountryY + ".");
-        while (year < 2010) {
-            int populationIncrease = (fertilityPerThousand - mortalityPerThousand) * populationCountryY / 1000;
-            populationCountryY = populationCountryY + populationIncrease;
-            year++;
-            System.out.println("Год " + year + " численность населения составляет " + populationCountryY + ".");
+        // вывел значение 2 массива в обратном порядке
+        System.out.println();
+        System.out.print(arr2[arr.length - 1]);
+        for (int i = arr2.length - 2; i >= 0; i--) {
+            System.out.print(", " + arr2[i]);
         }
-        // Task 3 Решение через for (решение для себя)
-        int populationCountryY1 = 12_000_000;
-        int fertilityPerThousand1 = 17;
-        int mortalityPerThousand1 = 8;
-        int year1 = 2000;
-        System.out.println("Год " + year1 + " численность населения составляет " + populationCountryY1 + ".");
-        for (int i1 = 0; i1 < 10; i1++) {
-            int populationIncrease1 = (fertilityPerThousand1 - mortalityPerThousand1) * populationCountryY1 / 1000;
-            populationCountryY1 = populationCountryY1 + populationIncrease1;
-            year1++;
-            System.out.println("Год " + year1 + " численность населения составляет " + populationCountryY1 + ".");
+        // вывел значение 3 массива вы обратном порядке
+        System.out.println();
+        System.out.print(arr3[arr.length - 1]);
+        for (int i = arr3.length - 2; i >= 0; i--) {
+            System.out.print(", " + arr3[i]);
         }
-        // Task 4
-        System.out.println("Task 4");
-        int salary5 = 15_000;
-        int total5 = 0;
-        float salary6 = salary5 * 0.07F;
-        int month5 = 1;
-        System.out.println("Месяц " + month5 + ", сумма накоплений равна " + total5 + " рублей.");
-        while (total5 < 12_000_000) {
-            month5++;
-            total5 = (int) (total5 + salary6);
-            total5 = (total5 + salary5);
-            System.out.println("Месяц " + month5 + ", сумма накоплений равна " + total5 + " рублей.");
-        }
-        // Task 5
-        System.out.println("Task 5");
-        int salary1 = 15_000;
-        int total1 = 0;
-        float salary2 = salary1 * 0.07F;
-        int month1 = 1;
-        System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей.");
-        while (total1 < 12_000_000) {
-            month1++;
-            total1 = total1 + salary1;
-            total1 = (int) (total1 + salary2);
-            if (month1 % 6 == 0) {
-                System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей.");
+        System.out.println();
+        // task 4
+        System.out.println("Задача 4");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                arr[i]++;
             }
         }
-
-        // Task 6
-        System.out.println("Task 6");
-        int salary3 = 15_000;
-        int total3 = 0;
-        float salary4 = salary3 * 0.07F;
-        int month3 = 1;
-        System.out.println("Месяц " + month3 + ", сумма накоплений равна " + salary3 + " рублей.");
-
-        while (month3 < 108) {
-            month3++;
-            total3 = total3 + salary3;
-            total3 = (int) (total3 + (salary4));
-            if (month3 % 6 == 0)
-                System.out.println("Месяц " + month3 + ", сумма накоплений равна " + total3 + " рублей.");
-        }
-        // Task 7
-        System.out.println("Task 7");
-        int firstFriday = 2;
-        for (; firstFriday < 31; firstFriday += 7) {
-            System.out.println("Сегодня пятница, " + firstFriday + " число. Необходимо подготовить отчет.");
-        }
-        // Task 8
-        System.out.println("Task 8");
-        int currentYear = 2025;
-        int startYear = currentYear - 200;
-        int endYear = currentYear + 100;
-        int period = 79;
-        for (; startYear <= endYear; startYear++) {
-            if (startYear % period == 0) {
-                System.out.println(startYear);
-            }
-        }
+        System.out.println(Arrays.toString(arr));
     }
 }
+
+
+
 
 
 
