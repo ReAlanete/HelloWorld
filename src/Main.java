@@ -46,11 +46,21 @@ public class Main {
         // Task 4
         System.out.println("Task 4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i >= 0; i--) {
-            System.out.println(reverseFullName[i]);
+
+        int left = 0;
+        int right = reverseFullName.length - 1; //12
+
+        while (left < right) {                        //0<12       1<11 10
+            char temp = reverseFullName[left];        // temp = 0   1 2
+            reverseFullName[left] = reverseFullName[right]; // = лефт = 12  11 10
+            reverseFullName[right] = temp;                 // темп равен 12  11 10
+            left++;
+            right--;
         }
+        System.out.println(Arrays.toString(reverseFullName));
     }
 }
+
 
 
 
